@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Device = require('./models/device');
+const username = ""
+const pass = ""
 
-mongoose.connect('mongodb+srv://aman4814be:abcdef123@cluster0.stg8k1w.mongodb.net/mydb', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://${username}:${pass}@cluster0.stg8k1w.mongodb.net/mydb`, {useNewUrlParser: true, useUnifiedTopology: true });
 
 const app = express();
 const bodyParser = require('body-parser');
